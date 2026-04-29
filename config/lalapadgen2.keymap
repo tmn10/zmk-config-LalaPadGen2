@@ -59,32 +59,41 @@
         };
     };
 
+    macros {
+        word: word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1 &kp LS(T) &kp K &kp Y &kp T &kp M &kp N &kp N5 &kp &kp &kp &kp &kp>;
+            label = "WORD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&mt2 SQT Q            &mt2 DOUBLE_QUOTES W  &mt2 GRAVE E          &kp R                        &mt2 TILDE T                                &kp Y             &kp U     &kp I                 &kp O              &mt2 PERCENT P
-&mt2 AT_SIGN A        &mt2 HASH S           &mt2 DOLLAR D         &kp F                        &kp G                                       &mt2 QUESTION H   &kp J     &kp K                 &kp L              &kp MINUS
-&kp Z                 &kp X                 &kp C                 &kp V                        &mt2 EXCLAMATION B                          &mt2 AMPERSAND N  &kp M     &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp LG(LA(V))
-&mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt LEFT_COMMAND LANGUAGE_1  &kp LEFT_COMMAND    &kp SPACE  &lt 1 ENTER  &kp BACKSPACE     &mo 2     &kp LANGUAGE_2        &kp LANGUAGE_1     &kp BACKSLASH
-                      &none                 &kp RIGHT             &kp DOWN                     &kp LEFT            &kp UP     &kp UP       &kp LEFT          &kp DOWN  &kp RIGHT             &none
-&mkp LCLK             &mkp RCLK             &mkp MCLK                                                                                                                  &mkp LCLK             &mkp RCLK          &mkp MCLK
-&mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LA(UP_ARROW)             &kp LEFT_COMMAND                            &mkp MB4          &mkp MB5  &kp LG(LC(LA(L)))     &kp LA(UP_ARROW)   &kp LEFT_COMMAND
+&mt2 SQT Q            &mt2 DOUBLE_QUOTES W  &mt2 GRAVE E          &kp R                        &mt2 TILDE T                                &kp Y             &kp U          &kp I                 &kp O              &mt2 PERCENT P
+&mt2 AT_SIGN A        &mt2 HASH S           &mt2 DOLLAR D         &kp F                        &kp G                                       &mt2 QUESTION H   &kp J          &kp K                 &kp L              &kp MINUS
+&kp Z                 &kp X                 &kp C                 &kp V                        &mt2 EXCLAMATION B                          &mt2 AMPERSAND N  &kp M          &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp LG(LA(V))
+&mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt LEFT_COMMAND LANGUAGE_1  &kp LEFT_COMMAND    &kp SPACE  &lt 1 ENTER  &kp BACKSPACE     &kp BACKSPACE  &kp LANGUAGE_2        &kp LANGUAGE_1     &kp BACKSLASH
+                      &kp ESCAPE            &kp RIGHT             &kp DOWN                     &kp LEFT            &kp UP     &kp UP       &kp LEFT          &kp DOWN       &kp RIGHT             &none
+&mkp LCLK             &mkp RCLK             &mkp MCLK                                                                                                                       &mkp LCLK             &mkp RCLK          &mkp MCLK
+&mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LA(UP_ARROW)             &kp LEFT_COMMAND                            &mkp MB4          &mkp MB5       &kp LG(LC(LA(L)))     &kp LA(UP_ARROW)   &kp LEFT_COMMAND
             >;
         };
 
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp KP_NUMLOCK    &kp KP_NUMBER_7    &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
-&kp NUMBER_6      &kp N7             &kp N8        &kp N9        &kp N0                    &trans            &kp KP_NUMBER_4    &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&kp F6            &kp F7             &kp F8        &kp F9        &kp F10                   &trans            &kp KP_NUMBER_1    &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK
-&trans            &trans             &trans        &trans        &trans   &trans  &kp DEL  &trans            &trans             &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_DIVIDE
-                  &trans             &trans        &trans        &trans   &trans  &trans   &trans            &trans             &trans           &trans
-&trans            &trans             &trans                                                                                     &trans           &trans           &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans        &trans        &trans                    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans           &trans
+&kp NUMBER_1      &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4           &kp N5                              &kp NUMBER_6      &kp N7             &kp N8        &kp N9     &kp N0
+&kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &none         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET                   &kp PLUS          &kp MINUS          &kp ASTERISK  &kp SLASH  &kp EQUAL
+&kp LEFT_BRACE    &kp LESS_THAN         &none         &kp GREATER_THAN       &kp RIGHT_BRACE                     &trans            &trans             &kp SLASH     &kp PIPE   &kp BACKSLASH
+&trans            &trans                &trans        &trans                 &trans             &trans  &kp DEL  &trans            &trans             &trans        &trans     &trans
+                  &trans                &trans        &trans                 &trans             &trans  &trans   &trans            &trans             &trans        &trans
+&trans            &trans                &trans                                                                                                        &trans        &trans     &trans
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))     &trans        &trans                 &trans                              &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans        &trans     &trans
             >;
         };
 
