@@ -57,6 +57,26 @@
             bindings = <&kp TAB>;
             key-positions = <10 11>;
         };
+
+        screenshot {
+            bindings = <&kp LG(LS(NUMBER_4))>;
+            key-positions = <30 32>;
+        };
+
+        screen_capture {
+            bindings = <&kp LS(LG(N5))>;
+            key-positions = <30 31>;
+        };
+
+        task_manager {
+            bindings = <&kp LG(LA(ESCAPE))>;
+            key-positions = <30 42>;
+        };
+
+        lock {
+            bindings = <&kp LC(LG(Q))>;
+            key-positions = <30 20>;
+        };
     };
 
     macros {
