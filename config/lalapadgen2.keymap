@@ -74,13 +74,13 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&mt2 SQT Q            &mt2 DOUBLE_QUOTES W  &mt2 GRAVE E          &kp R                        &mt2 TILDE T                                &kp Y             &kp U          &kp I                 &kp O              &mt2 PERCENT P
-&mt2 AT_SIGN A        &mt2 HASH S           &mt2 DOLLAR D         &kp F                        &kp G                                       &mt2 QUESTION H   &kp J          &kp K                 &kp L              &kp MINUS
-&kp Z                 &kp X                 &kp C                 &kp V                        &mt2 EXCLAMATION B                          &mt2 AMPERSAND N  &kp M          &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp LG(LA(V))
-&mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt LEFT_COMMAND LANGUAGE_1  &kp LEFT_COMMAND    &kp SPACE  &lt 1 ENTER  &kp BACKSPACE     &kp BACKSPACE  &bt BT_SEL 0          &bt BT_SEL 1       &bt BT_SEL 2
-                      &kp ESCAPE            &kp RIGHT             &kp DOWN                     &kp LEFT            &kp UP     &kp UP       &kp LEFT          &kp DOWN       &kp RIGHT             &word
-&mkp LCLK             &mkp RCLK             &mkp MCLK                                                                                                                       &mkp LCLK             &mkp RCLK          &mkp MCLK
-&mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LA(UP_ARROW)             &kp LEFT_COMMAND                            &mkp MB4          &mkp MB5       &kp LG(LC(LA(L)))     &kp LA(UP_ARROW)   &kp LEFT_COMMAND
+&mt2 SQT Q            &mt2 DOUBLE_QUOTES W  &mt2 GRAVE E          &kp R                        &mt2 TILDE T                                &kp Y             &kp U            &kp I                 &kp O              &mt2 PERCENT P
+&mt2 AT_SIGN A        &mt2 HASH S           &mt2 DOLLAR D         &kp F                        &kp G                                       &mt2 QUESTION H   &kp J            &kp K                 &kp L              &kp MINUS
+&kp Z                 &kp X                 &kp C                 &kp V                        &mt2 EXCLAMATION B                          &mt2 AMPERSAND N  &kp M            &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp LG(LA(V))
+&mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt LEFT_COMMAND LANGUAGE_1  &kp LEFT_COMMAND    &kp SPACE  &lt 1 ENTER  &kp BACKSPACE     &lt 3 BACKSPACE  &bt BT_SEL 0          &bt BT_SEL 1       &bt BT_SEL 2
+                      &kp ESCAPE            &kp RIGHT             &kp DOWN                     &kp LEFT            &kp UP     &kp UP       &kp LEFT          &kp DOWN         &kp RIGHT             &word
+&mkp LCLK             &mkp RCLK             &mkp MCLK                                                                                                                         &mkp LCLK             &mkp RCLK          &mkp MCLK
+&mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LA(UP_ARROW)             &kp LEFT_COMMAND                            &mkp MB4          &mkp MB5         &kp LG(LC(LA(L)))     &kp LA(UP_ARROW)   &kp LEFT_COMMAND
             >;
         };
 
