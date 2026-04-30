@@ -3,7 +3,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_LAYER   0
@@ -96,8 +95,8 @@
             bindings = <
 &mt2 SQT Q            &mt2 DOUBLE_QUOTES W  &mt2 GRAVE E          &kp R                      &mt2 TILDE T                                    &kp Y             &kp U            &kp I                 &kp O              &mt2 PERCENT P
 &mt2 AT_SIGN A        &mt2 HASH S           &mt2 DOLLAR D         &kp F                      &kp G                                           &mt2 QUESTION H   &kp J            &kp K                 &kp L              &kp MINUS
-&kp Z                 &kp X                 &kp C                 &mt2 LA(LG(V)) V           &mt2 EXCLAMATION B                              &mt2 AMPERSAND N  &kp M            &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp UP_ARROW
-&mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANG1  &kp SPACE  &lt 1 ENTER  &kp BACKSPACE     &lt 3 BACKSPACE  &kp LEFT              &kp DOWN           &kp RIGHT
+&kp Z                 &kp X                 &kp C                 &kp V                      &mt2 EXCLAMATION B                              &mt2 AMPERSAND N  &kp M            &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD  &kp LG(LA(V))
+&mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt LEFT_SHIFT LANGUAGE_2  &mt LEFT_COMMAND LANG1  &kp SPACE  &lt 1 ENTER  &kp BACKSPACE     &lt 3 BACKSPACE  &mkp LCLK             &mkp MCLK          &mkp RCLK
                       &kp ESCAPE            &kp RIGHT             &kp DOWN                   &kp LEFT                &kp UP     &kp UP       &kp LEFT          &kp DOWN         &kp RIGHT             &word
 &mkp LCLK             &mkp RCLK             &mkp MCLK                                                                                                                           &mkp LCLK             &mkp RCLK          &mkp MCLK
 &mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)           &kp LEFT_COMMAND                                &mkp MB4          &mkp MB5         &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)   &kp LEFT_COMMAND
@@ -133,8 +132,8 @@
         SYSTEM_LAYER {
             display-name = "system_layer";
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &trans                         &trans
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &bt BT_CLR                     &trans                         &trans                         &trans                         &trans
 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
 &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
          &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans
