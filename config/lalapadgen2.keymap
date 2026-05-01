@@ -97,9 +97,9 @@
 &mt2 AT_SIGN A        &mt2 HASH S           &mt2 DOLLAR D         &kp F                        &kp G                                           &mt2 QUESTION H   &kp J            &kp K                 &kp L               &kp MINUS
 &kp Z                 &kp X                 &kp C                 &kp V                        &mt2 EXCLAMATION B                              &mt2 AMPERSAND N  &kp M            &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD   &kp LG(LA(V))
 &mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt LEFT_COMMAND LANGUAGE_1  &mt LEFT_COMMAND LANG1  &kp SPACE  &lt 1 ENTER  &mkp LCLK         &lt 3 BACKSPACE  &kp LEFT              &mt2 UP_ARROW DOWN  &kp RIGHT
-                      &kp ESCAPE            &kp RIGHT             &kp DOWN                     &kp LEFT                &kp UP     &kp F12      &kp F1            &kp F11          &kp F2                &word
+                      &kp ESCAPE            &kp RIGHT             &kp DOWN                     &kp LEFT                &kp UP     &kp LG(F12)  &kp LG(F1)        &kp LG(F11)      &kp RG(F2)            &word
 &mkp LCLK             &mkp RCLK             &mkp MCLK                                                                                                                             &mkp LCLK             &mkp RCLK           &mkp MCLK
-&mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)             &kp LEFT_COMMAND                                &mkp MB4          &mkp MB5         &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)    &kp LEFT_COMMAND
+&mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)             &mkp MB5                                        &mkp MB4          &mkp MB5         &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)    &mkp MB5
             >;
         };
 
