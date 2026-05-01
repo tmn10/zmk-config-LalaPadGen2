@@ -99,7 +99,7 @@
 &mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt LEFT_COMMAND LANGUAGE_1  &mt LEFT_COMMAND LANG1  &kp SPACE  &lt 1 ENTER  &mkp MB1          &lt 3 BACKSPACE  &kp LEFT              &mt2 UP_ARROW DOWN  &kp RIGHT
                       &kp ESCAPE            &kp RIGHT             &kp DOWN                     &kp LEFT                &kp UP     &kp PAGE_UP  &mkp MB4          &kp PAGE_DOWN    &mkp MB5              &word
 &mkp LCLK             &mkp RCLK             &mkp MCLK                                                                                                                             &mkp LCLK             &mkp RCLK           &mkp MCLK
-&mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)             &kp LCTRL                                       &mkp MB4          &mkp MB5         &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)    &kp LEFT_COMMAND
+&mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)             &kp LEFT_COMMAND                                &mkp MB4          &mkp MB5         &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)    &kp LEFT_COMMAND
             >;
         };
 
