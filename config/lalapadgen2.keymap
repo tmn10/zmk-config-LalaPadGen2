@@ -102,34 +102,30 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp GLOBE>,
-                <&macro_tap>,
-                <&kp UP>,
-                <&macro_release>,
-                <&kp GLOBE &kp>;
-
+                <&macro_press &kp GLOBE>,
+                <&macro_tap &kp UP>,
+                <&macro_release &kp GLOBE>;
             label = "IPAD_MISSIONCONTROLL";
         };
 
         to_mac1: to_mac1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to 0>;
+            bindings = <&bt BT_SEL 0>, <&to 0>;
             label = "TO_MAC1";
         };
 
         to_mac2: to_mac2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 0>;
+            bindings = <&bt BT_SEL 1>, <&to 0>;
             label = "TO_MAC2";
         };
 
         to_ipad: to_ipad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &to 4>;
+            bindings = <&bt BT_SEL 2>, <&to 4>;
             label = "TO_IPAD";
         };
     };
