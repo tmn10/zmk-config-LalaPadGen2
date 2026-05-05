@@ -136,7 +136,7 @@
         to_ipad: to_ipad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 2 &to 4>;
+            bindings = <&bt BT_SEL 2 &tog 4>;
             label = "TO_IPAD";
         };
     };
@@ -187,7 +187,7 @@
             display-name = "system_layer";
             bindings = <
 &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &trans                         &trans
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &bt BT_CLR                     &to 0                          &to 4                          &trans                         &trans
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &bt BT_CLR                     &to 0                          &tog 4                         &trans                         &trans
 &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
 &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
          &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans
@@ -199,13 +199,13 @@
         iPad {
             display-name = "ipad";
             bindings = <
-&mt2 SQT Q            &mt2 DOUBLE_QUOTES W  &mt2 GRAVE E          &kp R                        &mt2 TILDE T                                     &kp Y               &kp U            &kp I                 &kp O                  &mt2 PERCENT P
-&mt2 AT_SIGN A        &mt2 HASH S           &mt2 DOLLAR D         &kp F                        &kp G                                            &mt2 QUESTION H     &kp J            &kp K                 &kp L                  &kp MINUS
-&kp Z                 &kp X                 &kp C                 &kp V                        &mt2 EXCLAMATION B                               &mt2 AMPERSAND N    &kp M            &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD      &kp LG(F12)
-&mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt LEFT_COMMAND LANGUAGE_1  &mt LEFT_COMMAND LANG1  &kp SPACE  &lt 1 ENTER   &kp BACKSPACE       &lt 3 BACKSPACE  &kp LG(F1)            &kp LG(F2)             &kp LG(F11)
-                      &kp ESCAPE            &kp RIGHT             &kp DOWN                     &kp LEFT                &kp UP     &kp UP_ARROW  &kp LEFT            &kp LG(F11)      &kp RG(F2)            &word
-&mkp LCLK             &mkp RCLK             &mkp MCLK                                                                                                                                &mkp LCLK             &mkp RCLK              &mkp MCLK
-&mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)             &mkp MB5                                         &kp LG(LEFT_ARROW)  &kp LG(RIGHT)    &kp LG(H)             &ipad_missioncontroll  &mkp MB5
+&trans   &trans   &trans   &trans   &trans                   &trans   &trans   &trans   &trans                  &trans
+&trans   &trans   &trans   &trans   &trans                   &trans   &trans   &trans   &trans                  &trans
+&trans   &trans   &trans   &trans   &trans                   &trans   &trans   &trans   &trans                  &kp LG(F12)
+&trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans   &trans   &kp LG(F1)  &kp LG(F2)           &kp LG(F11)
+         &trans   &trans   &trans   &trans   &trans  &kp UP_ARROW  &kp LEFT  &trans  &trans  &trans
+&mkp LCLK  &mkp RCLK  &mkp MCLK                                                        &trans   &trans                 &trans
+&trans   &trans   &trans   &trans   &trans                   &trans   &trans   &kp LG(H)  &ipad_missioncontroll  &trans
             >;
         };
     };
