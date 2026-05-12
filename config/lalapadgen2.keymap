@@ -68,7 +68,7 @@
 
         CONBO_ESC {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <0 30>;
         };
 
         COMBO_TAB {
@@ -88,7 +88,7 @@
 
         task_manager {
             bindings = <&kp LG(LA(ESCAPE))>;
-            key-positions = <30 42>;
+            key-positions = <30 10>;
         };
 
         lock {
@@ -151,7 +151,7 @@
 &mt2 AT_SIGN A        &mt2 HASH S           &mt2 DOLLAR D         &kp F                        &kp G                                           &mt2 QUESTION H       &kp J            &kp K                  &kp L              &kp MINUS
 &kp Z                 &kp X                 &kp C                 &kp V                        &mt2 EXCLAMATION B                              &mt2 AMPERSAND N      &kp M            &mt2 SEMICOLON COMMA   &mt2 COLON PERIOD  &kp UP_ARROW
 &mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt LEFT_COMMAND LANGUAGE_1  &mt LEFT_COMMAND LANG1  &kp SPACE  &lt 1 ENTER  &kp BACKSPACE         &lt 3 BACKSPACE  &kp LEFT               &kp RIGHT          &kp DOWN
-                      &kp ESCAPE            &kp RIGHT             &kp DOWN                     &kp LEFT                &kp UP     &kp UP       &kp LG(LA(LC(LEFT)))  &kp DOWN_ARROW   &kp LG(LA(LC(RIGHT)))  &word
+                      &none                 &kp RIGHT             &kp DOWN                     &kp LEFT                &kp UP     &kp UP       &kp LG(LA(LC(LEFT)))  &kp DOWN_ARROW   &kp LG(LA(LC(RIGHT)))  &word
 &mkp LCLK             &mkp RCLK             &mkp MCLK                                                                                                                                 &mkp LCLK              &mkp RCLK          &mkp MCLK
 &mkp MB4              &mkp MB5              &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)             &mkp MB5                                        &kp LG(LEFT_ARROW)    &kp LG(RIGHT)    &kp LG(LC(LA(L)))      &kp LC(UP_ARROW)   &mkp MB5
             >;
