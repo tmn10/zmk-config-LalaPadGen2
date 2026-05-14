@@ -22,3 +22,22 @@
 &trackpad_listener_L {
     status = "okay";
 };
+
+/* Haptic feedback (LRA via DRV2605L). Right side only.
+ * The DRV2605L sits on the same I2C bus as the IQS9151 trackpad.
+ */
+&xiao_i2c {
+    drv2605: drv2605@5a {
+        compatible = "ti,drv2605";
+        reg = <0x5a>;
+        actuator-type = "lra";
+        rated-voltage-mv = <2000>;
+        overdrive-voltage-mv = <2400>;
+        library = <6>;
+        status = "okay";
+    };
+};
+
+&iqs9151 {
+    haptic-dev = <&drv2605>;
+};
