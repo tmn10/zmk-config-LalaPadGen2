@@ -1,4 +1,5 @@
 #include "lalapadgen2.dtsi"
+#include <dt-bindings/adc/ads1x1x.h>
 
 &default_transform {
     col-offset = <6>;
@@ -36,8 +37,58 @@
         library = <6>;
         status = "okay";
     };
+
+    /* FSR click ADC (ADS1015). Same I2C bus at address 0x48.
+     * ADDR pin tied to GND → 0x48.
+     * Channel 0: single-ended AIN0, gain 1x (FSR ±4.096 V → ~2 mV/count).
+     * Wiring: FSR+ → 3V3, FSR- → AIN0 + 47kΩ pull-down to GND.
+     */
+    ads1015: ads1015@48 {
+        compatible = "ti,ads1015";
+        reg = <0x48>;
+        status = "disabled";
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        channel@0 {
+            reg = <0>;
+            zephyr,gain = "ADC_GAIN_1";
+            zephyr,reference = "ADC_REF_INTERNAL";
+            zephyr,acquisition-time = <0>;
+            zephyr,resolution = <12>;
+            zephyr,input-positive = <ADS1X1X_INPUT_AIN0>;
+        };
+    };
 };
 
 &iqs9151 {
     haptic-dev = <&drv2605>;
+    fsr-click-dev = <&fsr_click>;
+};
+
+/ {
+    /* FSR click detector: polls ADS1015 AIN0 and emits BTN_0 events.
+     * threshold-delta: raw counts above resting baseline = press.
+     * At gain 1x: 1 count ≈ 2 mV. Start at 50 counts (≈100 mV) and
+     * tune via haptic-gate-ms / threshold-delta if false triggers occur.
+     */
+    fsr_click: fsr_click {
+        compatible = "zmk,fsr-click";
+        io-channels = <&ads1015 0>;
+        haptic-dev = <&drv2605>;
+        threshold-delta = <50>;
+        poll-interval-ms = <5>;
+        haptic-gate-ms = <200>;
+        status = "disabled";
+    };
+
+    /* Route FSR BTN_0 events through the same behavior mapping as the
+     * IQS9151 right-side trackpad (BTN_0 → POS_TP_LCLK_R → left click).
+     */
+    fsr_click_listener: fsr_click_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&fsr_click>;
+        input-processors = <&trackpad_key_behaviors_R>;
+    };
 };
