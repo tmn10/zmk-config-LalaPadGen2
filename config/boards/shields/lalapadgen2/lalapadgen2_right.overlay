@@ -1,5 +1,8 @@
 #include "lalapadgen2.dtsi"
-#include <dt-bindings/adc/ads1x1x.h>
+/* ADS1X1X_INPUT_AIN0 = 4 (single-ended AIN0). Defined here because the
+ * dt-bindings/adc/ads1x1x.h header may not be present in all ZMK toolchains.
+ */
+#define ADS1X1X_INPUT_AIN0 4
 
 &default_transform {
     col-offset = <6>;
