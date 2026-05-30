@@ -49,7 +49,7 @@
     ads1015: ads1015@48 {
         compatible = "ti,ads1015";
         reg = <0x48>;
-        status = "disabled";
+        status = "okay";
         #address-cells = <1>;
         #size-cells = <0>;
         #io-channel-cells = <1>;
@@ -83,7 +83,7 @@
         threshold-delta = <50>;
         poll-interval-ms = <5>;
         haptic-gate-ms = <200>;
-        status = "disabled";
+        status = "okay";
     };
 
     /* Route FSR BTN_0 events through the same behavior mapping as the
@@ -91,7 +91,7 @@
      */
     fsr_click_listener: fsr_click_listener {
         compatible = "zmk,input-listener";
-        status = "disabled";
+        status = "okay";
         device = <&fsr_click>;
         input-processors = <&trackpad_key_behaviors_R>;
     };
