@@ -177,8 +177,8 @@
         status = "disabled";
         device = <&trackpad_split_L>;
         input-processors = <&trackpad_key_behaviors_L>,
-                           <&zip_xy_scaler 1 5>,
-                           <&zip_scroll_scaler 1 12>,
+                           <&zip_xy_scaler 2 3>,
+                           <&zip_scroll_scaler 1 60>,
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>;
         lowspeedmode {
