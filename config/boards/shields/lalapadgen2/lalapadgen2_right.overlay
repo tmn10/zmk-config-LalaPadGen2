@@ -36,7 +36,7 @@
         reg = <0x5a>;
         actuator-type = "lra";
         rated-voltage-mv = <2000>;
-        overdrive-voltage-mv = <2400>;
+        overdrive-voltage-mv = <2800>;
         library = <6>;
         status = "okay";
     };
