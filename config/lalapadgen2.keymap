@@ -85,6 +85,11 @@
             bindings = <&kp LC(LG(Q))>;
             key-positions = <30 0>;
         };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 0 1>;
+        };
     };
 
     macros {
