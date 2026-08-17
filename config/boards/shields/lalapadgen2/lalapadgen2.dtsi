@@ -14,6 +14,8 @@
 #define POS_TP_UP_L    60
 #define POS_TP_DOWN_L  61
 #define POS_TP_PINCH_L 62
+#define POS_TP_2F_LEFT_L  68
+#define POS_TP_2F_RIGHT_L 69
 
 #define POS_TP_LCLK_R  55
 #define POS_TP_RCLK_R  56
@@ -23,6 +25,8 @@
 #define POS_TP_UP_R    65
 #define POS_TP_DOWN_R  66
 #define POS_TP_PINCH_R 67
+#define POS_TP_2F_LEFT_R  70
+#define POS_TP_2F_RIGHT_R 71
 
 / {
     chosen {
@@ -41,6 +45,7 @@
                     RC(4,1) RC(4,2)	RC(4,3)	RC(4,4)	RC(4,5)	RC(4,6)	RC(4,7)	RC(4,8)	RC(4,9)	RC(4,10)	
             RC(5,0)	RC(5,1) RC(5,2)                                                 RC(5,9)	RC(5,10) RC(5,11)
             RC(6,0)	RC(6,1) RC(6,2)	RC(6,3)	RC(6,4)                 RC(6,7)	RC(6,8) RC(6,9)	RC(6,10) RC(6,11)
+            RC(5,3)	RC(5,4)                                                 RC(5,7)	RC(5,8)
         >;
     };
 
@@ -95,9 +100,11 @@
                     INPUT_BTN_2
                     INPUT_BTN_3
                     INPUT_BTN_4
-                    INPUT_BTN_5 
+                    INPUT_BTN_5
                     INPUT_BTN_6
                     INPUT_BTN_7
+                    INPUT_BTN_8
+                    INPUT_BTN_9
                     >;
         bindings = <
                     &tp_to_pos  POS_TP_LCLK_R
@@ -108,6 +115,8 @@
                     &tp_to_pos  POS_TP_UP_R
                     &tp_to_pos  POS_TP_DOWN_R
                     &tp_to_pos  POS_TP_PINCH_R
+                    &tp_to_pos  POS_TP_2F_LEFT_R
+                    &tp_to_pos  POS_TP_2F_RIGHT_R
                     >;
     };
     trackpad_key_behaviors_L: trackpad_key_behaviors_L {
@@ -120,9 +129,11 @@
                     INPUT_BTN_2
                     INPUT_BTN_3
                     INPUT_BTN_4
-                    INPUT_BTN_5 
+                    INPUT_BTN_5
                     INPUT_BTN_6
                     INPUT_BTN_7
+                    INPUT_BTN_8
+                    INPUT_BTN_9
                     >;
         bindings = <
                     &tp_to_pos  POS_TP_LCLK_L
@@ -133,6 +144,8 @@
                     &tp_to_pos  POS_TP_UP_L
                     &tp_to_pos  POS_TP_DOWN_L
                     &tp_to_pos  POS_TP_PINCH_L
+                    &tp_to_pos  POS_TP_2F_LEFT_L
+                    &tp_to_pos  POS_TP_2F_RIGHT_L
                     >;
     };
     

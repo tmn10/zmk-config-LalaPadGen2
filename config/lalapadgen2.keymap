@@ -152,6 +152,7 @@
                       &none                 &kp RIGHT             &kp DOWN                     &kp LEFT                     &kp UP     &none        &none               &none            &none                 &word
 &kp LG(R)             &kp LG(LA(V))         &kp LG(LS(V))                                                                                                                                &mkp LCLK             &mkp RCLK          &mkp MCLK
 &kp LC(LEFT_ARROW)    &kp LC(RIGHT)         &kp LG(LA(LC(L)))     &kp LC(UP_ARROW)             &mkp MB5                                             &kp LC(LEFT_ARROW)  &kp LC(RIGHT)    &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)   &mkp MB5
+&none                 &none                                                                                                                                                                                    &kp LG(LEFT_ARROW)    &kp LG(RIGHT)
             >;
         };
 
@@ -165,6 +166,7 @@
                   &trans                &kp LA(LC(RIGHT))  &trans                 &kp LA(LC(LEFT_ARROW))  &trans  &kp C_VOLUME_UP  &kp C_BRI_DEC     &kp C_VOLUME_DOWN  &kp C_BRI_UP  &trans
 &trans            &trans                &trans                                                                                                                          &trans        &trans     &trans
 &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))     &trans             &trans                 &trans                                           &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans        &trans     &trans
+&trans            &trans                                                                                                                                                 &trans        &trans
             >;
         };
 
@@ -178,6 +180,7 @@
                  &trans         &trans        &trans                &trans                 &trans  &trans  &trans         &trans    &trans          &trans
 &trans           &trans         &trans                                                                                              &trans          &trans     &trans
 &trans           &trans         &trans        &trans                &trans                                 &trans         &trans    &trans          &trans     &trans
+&trans           &trans                                                                                                                                     &trans     &trans
             >;
         };
 
@@ -191,6 +194,7 @@
          &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans
 &trans   &trans   &trans                                                                                                   &trans                         &trans                         &trans
 &trans   &trans   &trans   &trans   &trans                   &trans                         &trans                         &trans                         &trans                         &trans
+&trans   &trans                                                                                                                                            &trans                         &trans
             >;
         };
 
@@ -204,6 +208,7 @@
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
 &trans  &trans  &trans                                                  &trans     &trans                 &trans
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &kp LG(H)  &ipad_missioncontroll  &trans
+&trans  &trans                                                         &trans     &trans
             >;
         };
     };
