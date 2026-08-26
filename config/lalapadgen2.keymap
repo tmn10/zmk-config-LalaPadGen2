@@ -70,12 +70,12 @@
         compatible = "zmk,combos";
 
         screenshot {
-            bindings = <&kp LG(LS(NUMBER_4))>;
+            bindings = <&kp LG(LS(LC(NUMBER_4)))>;
             key-positions = <30 32>;
         };
 
         screen_capture {
-            bindings = <&kp LS(LG(N5))>;
+            bindings = <&kp LG(LS(LC(N5)))>;
             key-positions = <30 31>;
         };
 
@@ -91,7 +91,7 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 0 1>;
+            key-positions = <0 1>;
         };
     };
 
