@@ -75,7 +75,7 @@
         };
 
         screen_capture {
-            bindings = <&kp LG(LS(LC(N5)))>;
+            bindings = <&kp LG(LS(N5))>;
             key-positions = <30 31>;
         };
 
