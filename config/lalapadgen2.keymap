@@ -95,7 +95,7 @@
         };
 
         copy_pass {
-            bindings = <&kp LA(LG(V))>;
+            bindings = <&kp LA(LG(C))>;
             key-positions = <31 32>;
         };
     };
