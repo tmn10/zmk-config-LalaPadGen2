@@ -98,6 +98,34 @@
             bindings = <&kp LA(LG(C))>;
             key-positions = <31 32>;
         };
+
+        word_guard_up {
+            bindings = <&word>;
+            key-positions = <51 47>;
+            timeout-ms = <80>;
+            layers = <0>;
+        };
+
+        word_guard_left {
+            bindings = <&word>;
+            key-positions = <51 48>;
+            timeout-ms = <80>;
+            layers = <0>;
+        };
+
+        word_guard_down {
+            bindings = <&word>;
+            key-positions = <51 49>;
+            timeout-ms = <80>;
+            layers = <0>;
+        };
+
+        word_guard_right {
+            bindings = <&word>;
+            key-positions = <51 50>;
+            timeout-ms = <80>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -154,7 +182,7 @@
 &mt2 AT_SIGN A        &mt2 HASH S           &mt2 DOLLAR D         &kp F                         &kp G                                                &mt2 QUESTION H     &kp J            &kp K                 &kp L               &kp MINUS
 &kp Z                 &kp X                 &kp C                 &kp V                         &mt2 EXCLAMATION B                                   &mt2 AMPERSAND N    &kp M            &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD   &kp UP_ARROW
 &mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt RIGHT_COMMAND LANGUAGE_1  &mt LEFT_COMMAND LANGUAGE_1  &kp SPACE  &lt 1 ENTER  &kp BACKSPACE       &lt 3 BACKSPACE  &kp LEFT              &kp RIGHT           &kp DOWN
-                      &none                 &kp RIGHT             &kp DOWN                      &kp LEFT                     &kp UP     &none        &none               &none            &none                 &word
+                      &none                 &kp RIGHT             &kp DOWN                      &kp LEFT                     &kp UP     &kp LC(LA(RET))  &kp LC(LA(LEFT_ARROW))  &kp LC(LA(BACKSPACE))  &kp LC(LA(RIGHT_ARROW))  &word
 &kp LG(R)             &kp LG(LA(V))         &kp LG(LS(V))                                                                                                                                 &mkp LCLK             &mkp RCLK           &mkp MCLK
 &kp LC(LEFT_ARROW)    &kp LC(RIGHT)         &kp LG(LA(LC(L)))     &kp LC(UP_ARROW)              &mkp MB5                                             &kp LC(LEFT_ARROW)  &kp LC(RIGHT)    &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)    &mkp MB5
 &none                 &none                                                                                                                                                                                     &kp LG(LEFT_ARROW)  &kp LG(RIGHT)
