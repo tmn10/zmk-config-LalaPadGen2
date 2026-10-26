@@ -164,7 +164,7 @@
 &kp Z                 &kp X                 &kp C                 &kp V                         &mt2 EXCLAMATION B                                   &mt2 AMPERSAND N    &kp M            &mt2 SEMICOLON COMMA  &mt2 COLON PERIOD   &kp UP_ARROW
 &mt LEFT_CONTROL TAB  &mt LEFT_ALT LS(TAB)  &mt LEFT_SHIFT LANG2  &mt RIGHT_COMMAND LANGUAGE_1  &mt LEFT_COMMAND LANGUAGE_1  &kp SPACE  &lt 1 ENTER  &kp BACKSPACE       &lt 3 BACKSPACE  &kp LEFT              &kp RIGHT           &kp DOWN
                       &none                 &kp RIGHT             &kp DOWN                      &kp LEFT                     &kp UP     &dirtap 0 LC(LA(RET))  &dirtap 0 LC(LA(LEFT_ARROW))  &dirtap 0 LC(LA(BACKSPACE))  &dirtap 0 LC(LA(RIGHT_ARROW))  &word
-&kp LG(R)             &kp LG(LA(V))         &kp LG(LS(V))                                                                                                                                 &mkp LCLK             &mkp RCLK           &mkp MCLK
+&none                 &kp LG(LA(V))         &kp LG(LS(V))                                                                                                                                 &mkp LCLK             &mkp RCLK           &mkp MCLK
 &kp LC(LEFT_ARROW)    &kp LC(RIGHT)         &kp LG(LA(LC(L)))     &kp LC(UP_ARROW)              &mkp MB5                                             &kp LC(LEFT_ARROW)  &kp LC(RIGHT)    &kp LG(LC(LA(L)))     &kp LC(UP_ARROW)    &mkp MB5
 &none                 &none                                                                                                                                                                                     &kp LG(LEFT_ARROW)  &kp LG(RIGHT)
             >;
