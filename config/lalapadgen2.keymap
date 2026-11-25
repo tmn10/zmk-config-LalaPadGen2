@@ -118,6 +118,14 @@
             bindings = <&kp LA(LG(C))>;
             key-positions = <31 32>;
         };
+
+        // ドングルを書き込みモードにする（システムレイヤーで2段目右端の2つを同時押し）。
+        // &bootloader は押したキーの側で動くが、コンボから呼ぶと親機（ドングル）で動く。
+        dongle_bootloader {
+            bindings = <&bootloader>;
+            key-positions = <18 19>;
+            layers = <3>;
+        };
     };
 
     macros {
