@@ -1,9 +1,20 @@
 ---
 include:
+  # 単体構成（右が親機）。master と同じもの。戻すときはこれを焼く
   - board: seeeduino_xiao_ble
     shield: lalapadgen2_right rgbled_adapter
     snippet: studio-rpc-usb-uart
+  # 左は単体構成でもドングル構成でも同じファーム（どちらでも子機）
   - board: seeeduino_xiao_ble
     shield: lalapadgen2_left rgbled_adapter
+  # ドングル構成：Gen1 の XIAO に焼く親機。ZMK Studio はドングルの USB から
+  - board: seeeduino_xiao_ble
+    shield: lalapadgen2_dongle
+    snippet: studio-rpc-usb-uart
+    artifact-name: lalapadgen2_dongle
+  # ドングル構成：右を子機にしたもの
+  - board: seeeduino_xiao_ble
+    shield: lalapadgen2_right lalapadgen2_peripheral rgbled_adapter
+    artifact-name: lalapadgen2_right_peripheral
   - board: seeeduino_xiao_ble
     shield: settings_reset

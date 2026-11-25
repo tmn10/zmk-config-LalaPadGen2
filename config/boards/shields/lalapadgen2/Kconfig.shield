@@ -3,3 +3,10 @@ config SHIELD_LALAPADGEN2_LEFT
 
 config SHIELD_LALAPADGEN2_RIGHT
     def_bool $(shields_list_contains,lalapadgen2_right)
+
+config SHIELD_LALAPADGEN2_DONGLE
+    def_bool $(shields_list_contains,lalapadgen2_dongle)
+
+# 右手側をドングル構成の子機にする上乗せ
+config SHIELD_LALAPADGEN2_PERIPHERAL
+    def_bool $(shields_list_contains,lalapadgen2_peripheral)

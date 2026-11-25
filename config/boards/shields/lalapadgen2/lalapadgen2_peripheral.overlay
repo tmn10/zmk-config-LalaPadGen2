@@ -1,0 +1,18 @@
+/* 右手側をドングル構成の子機にする上乗せ（shield: lalapadgen2_right lalapadgen2_peripheral）。
+ * 右パッドはその場で受けずに input-split でドングルへ送る（左パッドと同じ形）。
+ * 振動（DRV2605L）はドライバの中で右だけで完結するので、子機のままで動く。 */
+
+&trackpad_listener_R {
+    status = "disabled";
+};
+&trackpad_listener_L {
+    status = "disabled";
+};
+
+&trackpad_split_R {
+    status = "okay";
+    device = <&iqs9151>;
+};
+&trackpad_split_L {
+    status = "disabled";
+};

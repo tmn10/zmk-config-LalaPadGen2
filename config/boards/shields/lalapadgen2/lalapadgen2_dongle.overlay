@@ -1,0 +1,21 @@
+/* ドングル（キーなしの親機）。Gen1 の XIAO nRF52840 を流用する前提。
+ * キーは持たない（mock kscan＝ピンを一切触らない）ので、Gen1 の基板に付けたままでも焼ける。
+ * 左右のトラックパッドはどちらも input-split で受け、ジェスチャーはここでキー位置に変える。
+ * キーマップと共通設定は lalapadgen2.keymap / lalapadgen2.conf がそのまま読まれる。 */
+#include "lalapadgen2-common.dtsi"
+
+/ {
+    kscan0: kscan {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
+
+&trackpad_listener_R {
+    status = "okay";
+};
+&trackpad_listener_L {
+    status = "okay";
+};
