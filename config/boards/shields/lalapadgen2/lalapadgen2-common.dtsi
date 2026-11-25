@@ -30,6 +30,7 @@
 #define POS_TP_2F_LEFT_R  70
 #define POS_TP_2F_RIGHT_R 71
 
+/ {
     chosen {
         zmk,physical-layout = &lalapadgen2_physical_layout;
     };
